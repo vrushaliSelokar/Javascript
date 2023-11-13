@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of odd number</title>
+</head>
+<body>
+    <h3>Sum of odd no. greater than 10 and less than 30</h3>
+
+    <p id="demo"></p>
+
+    <script>
+        let sum = 0;
+        for(let i=10 ; i<=30 ; i++)
+        {
+          if(i%2!=0)
+          {  
+            sum += i; 
+          }
+        }
+        document.getElementById("demo").innerHTML= "Result: " +sum;
+    </script>
+</body>
+</html>

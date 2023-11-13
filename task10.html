@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a function that receives an array of numbers and returns 
+           an array containing only the positive numbers.</title>
+</head>
+<body>
+    <h3>A function that receives an array of numbers
+        and returns an array containing only the positive numbers.</h3>
+
+    <p id="demo"></p>    
+     
+    <button type="button" onclick="myFunction();">sort positive number</button>
+    <script>
+        const num = [4,6,7,9,2,5,-2,-8,-6,-4];
+        let res = " ";
+
+    //     function display()
+    //     {
+    //        for(let i=0 ;i<num.length; i++)
+    //        {
+    //         if(num[i]>0) 
+    //         {
+    //           res = i ;   
+    //         }  
+    //        } 
+    //        document.getElementById("demo").innerHTML = res ;
+    //    }
+
+    num.forEach(myFunction);
+        res = " ";
+    function myFunction(value){
+        if(value>0)
+        res = +value +" ";
+    }
+    document.getElementById("demo").innerHTML = res ;
+    </script>
+</body>
+</html>

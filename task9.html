@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The average of the numbers in an array </title>
+</head>
+<body>
+    <h3>Average of the numbers in an array of numbers</h3>
+
+    <p id="demo"></p>
+
+    <script>
+       const num = [3,5,6,12,7,8,2,10];
+        let sum = 0;
+        let avg = 0;
+        
+        for(let i=0 ;i<num.length; i++)
+        {
+          sum += num[i];   
+        }
+         avg = sum/num.length;
+
+        document.getElementById("demo").innerHTML = "Average of no. in an array [" +num +" ] : " +avg;  
+    </script>
+</body>
+</html>
